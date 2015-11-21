@@ -1,6 +1,6 @@
+// **Experimenting with node.js
 // HTTP server: Takes a POST request of a coordinate point
 //              Outputs what state the point lies in, or null if no state
-// Experimenting with node
 // The json file read-in contains coordinate points of US state borders
 
 var express = require('express');
