@@ -37,7 +37,8 @@ app.post('/', function(req, res){
 var server = app.listen(3000, function (){
   var host = server.address().address;
   var port = server.address().port;
-  
+
+// blocking call at server start to load border points in  
   lineReader.eachLine('states.json', function(line, last) {
 	states.push(JSON.parse(line));
   });
